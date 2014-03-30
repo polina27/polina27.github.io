@@ -1,0 +1,341 @@
+
+  <html>
+    <head>
+	
+	<title>
+      polly's pocket.
+    </title>
+	<link href="style.css" rel="stylesheet"></link>
+	</head>
+	
+	<body>
+	
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+
+	<div id="top">
+		<header>
+			<hgroup>
+				<h1> <a href="index.html"><img class="logo" src="dandelion.jpg" /></a>
+
+				polly's pocket.
+			</hgroup>
+			<nav>
+				<ul>
+					<li class="tabs" id="tab-aboutme"><a>About Me</a></li>
+					<li class="tabs" id="tab-experience"><a>Experience</a></li>
+					<li class="tabs" id="tab-projects"><a>Projects</a></li>
+					<li class="tabs" id="tab-contactinfo"><a>Contact Info</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	
+	
+	<script>
+		$(document).ready(function(){
+	            $(".tabs").click(function() {
+                var page = $(this).attr('id');
+                var idname = page.split('-')[1];
+                $('html, body').animate({
+                    scrollTop: $("div#" + idname).offset().top
+                }, 1000);
+            }
+            )
+	        }
+	        )
+                </script>
+
+<div id="aboutme">
+	<div id="textbox-aboutme">
+	<h2>I'm Polina Smirnova.</h2>
+	<h3>Welcome to my portfolio.</h3>
+	<br>
+	<p>Before college, I majored in Visual Arts at a technical high school in Bergen County, NJ. Now, I humbly find myself studying Mechanical Engineering under a full scholarship at The Cooper Union in New York, NY.
+ 
+<br><br>I'm graduating in May 2014 and will be working for a bridge engineering firm in New York called Hardesty &amp; Hanover starting in June.
+ 
+<br><br>My interests include ballet, yoga, writing, baking, drawing, volleyball, creative design, and web design.
+	</p>
+	</div>
+</div>
+
+	<div id="experience">
+	<div id="textbox-experience">
+		<h2>Experience.</h2>
+		<h3>Find out what I've been up to...</h3>
+		<br>
+			<table style="margin-left:20px; margin-right:20px">
+				<tr>
+					<td>
+						<a href="http://www.hardesty-hanover.com">
+						<img src="hardestylogo.jpg" class="hardestylogo" />
+						</a>
+					</td>
+					<td>
+						<p class="white">
+						<b>Hardesty &amp; Hanover</b><br>
+						<i>Mechanical Engineer, I</i><br>
+						New York, NY
+						<br>(June 2014)
+						<br><br>
+					</td>
+				</p>
+				</tr>
+
+				<tr>	
+					<td>
+						<a href="http://www.structuretone.com">
+						<img src="structuretonelogo.gif" class="hardestylogo"/>
+						</a>
+					</td>
+					<td>
+						<p class="white">
+						<b>StructureTone</b><br>
+						<i>Intern, Estimating</i><br>
+						New York, NY
+						<br>(June 2013 - March 2014)
+						<br><br>
+						</p>
+				</td>
+			</tr>
+
+				<tr>	
+					<td>
+						<a href="http://www.siggraph.com">
+						<img src="siggraphlogo.gif" class="hardestylogo"/>
+						</a>
+					</td>
+					<td>
+						<p class="white">
+						<b>SIGGRAPH</b><br>
+						<i>Student Volunteer at International Conferences</i><br>
+						Los Angeles, CA &amp; Vancouver, BC
+						<br>(August 2011 &amp; August 2012)
+						<br><br>
+						</p>
+				</td>
+			</tr>
+		</tr>
+
+			</table>
+			<h3>References available upon request.</h3>
+	</div>
+</div>
+
+<div id="projects">
+
+
+		<table>
+
+		<tr>
+			<th rowspan="2"> 
+		<div id="textbox-projects">
+			<div id="projects-intro">
+		<h2>Projects.</h2>
+		<h3>I am continuously looking to evoke a positive reaction from different audiences through my work.</h3>
+		<br><br>
+		<p>Hover over any of the project boxes on the right to learn more.</p>
+	</div>
+
+
+	<script>
+		$(document).ready(function(){
+	            $("table td div").hover(function() {
+	            	$("#projects-intro").hide();
+                var page = $(this).attr('id');
+                var idname = page.split('-')[1];
+                $('#' + idname).show();
+            }
+            , function(){
+            	var page = $(this).attr('id');
+                var idname = page.split('-')[1];
+                $('#' + idname).hide();
+	            	$("#projects-intro").show();
+            }
+            )
+	        }
+	        )
+                </script>
+
+
+
+		</p>
+
+		<div style="display:none;" id="industrialrobots"><h2>Industrial Robots</h2>
+			<h3>This project is in progress!<br><br></h3>
+			<p>
+				I'm currently taking a graduate level robotics course and learning how to manipulate a PUMA robot to perform tasks. Check back soon to learn more.
+			</p>
+		</div>
+
+		<div style="display:none" id="hippocampus"><h2>hippocampus</h2>
+			<h3>A new way to look back.<br><br></h3>
+			<p>
+
+				As a senior college (and a generally nostalgic person), I love to save and share my memories with friends. So I teamed up with two classmates and created this collaborative virtual scrapbook. hippocampus lets you share pictures, music, text, and more, all on customizable layouts that your friends can also view and edit with you.
+			<br><br>
+			hippocampus was the product of my first Hackathon ever, hackCooper. (And it also won 3rd place!)</p>
+		</div>
+
+		<div style="display:none" id="outreach"><h2>Outreach in NYC Public Schools</h2>
+			<h3>
+			Having role models in the field of STEM is a great way to get and stay inspired.
+			<br><br></h3>
+			<p>In 2012 and 2013, I helped Cooper Union receive the Diversity Action Grant from the American Society of Mechanical Engineers (ASME). With this grant, a group of students and I were able to put together lesson plans and purchase materials with which to lead a hands-on bridge building class for 5th graders from Brooklyn.
+		</p>
+		</div>
+
+		<div style="display:none" id="at41cs"><h2>@41CooperSquare</h2>
+			 <h3>Under the advisement of Professor Melody Baglione, @41CooperSquare is my senior design project.
+			<br><br></h3>
+			<p>
+			Driven by the goal of working with our building tenants to improve energy use, @41CooperSquare aims to share our building's energy performance with building tenants and visitors alike. By making this information accessible to the public, we hope to encourage green behaviors, inspire support for energy efficiency, and showcase some of the unique features of The Cooper Union.
+		</p>
+		</div>
+
+		<div style="display:none" id="sweplanners"><h2>SWE Planners</h2>
+			<h3>
+			 SWE is one of my favorite clubs at Cooper Union. As an junior, I wanted to welcome the new freshmen members to Cooper and to introduce them to SWE.
+			 <br><br></h3>
+			 <p>
+			 I used Adobe InDesign to create monthly planners for the 2012-2013 school year, complete with the academic schedule, SWE events, and advice from the SWE board of officers. I also printed, cut, and spiral-bound the planners.
+			</p>
+		</div>
+
+		<div style="display:none" id="mechatronics"><h2>Mechatronics</h2>
+			<h3>
+			 Mechatronics was easily the coolest class I took in college. (Teams of students building robots to fight other robots... I mean, come on. So cool.)
+			<br><br></h3>
+		</div>
+
+		<div style="display:none" id="drawings"><h2>Drawings</h2>
+			<h3>Enjoy looking through some of my doodles.
+			<br><br>
+		</h3><p>
+			 Art is something I grew up with, and went to high school for, and it's something that I don't think I will ever be able to leave behind.
+			 <br><img src="horse.jpg" height="200px"/>
+			 <img src="lancome.jpg" height="200px" />
+			 <img src="express.jpg" height="200px" />
+			</p>
+		</div>
+
+		<div style="display:none;" id="ebt"><h2>EBT</h2>
+			<h3>
+			 One of my passions is bringing together people I love and respect in one place, at one time.
+			 <br><br></h3>
+			 <p>
+			 In freshman year, my roommates and I decided that we wanted to celebrate Thanksgiving with all of our new freshman classmates before splitting up and heading home to celebrate with our families. So, we created a potluck event and told our friends to bring in a dish--everything except turkey, that is, because we didn't have functioning ovens in the freshman dorms. We titled this event "Everything But Turkey" (or EBT for short), and due to its overwhelming success, we turned it into a tradition. Every weekend before Thanksgiving, we gathered our best friends and best recipes and just enjoyed each other's company. By senior year, we had a new plan... we all had ovens and it was our last Thanksgiving together with our Cooper family. So, we decided we had to have one last EAT... Everything <b>AND</b> Turkey.
+			</p>
+		</div>
+
+	</div>
+
+</th>
+
+
+	
+
+			<td>
+				<div id="projects-industrialrobots">
+				<img src="puma.gif" display="none" class="minibox-pic" style="height: 75%; margin-top: 20px">
+<!-- 				<h4>industrial robots</h4> -->
+				</div>
+			</td>
+
+			<td>
+				<a href="http://shivmevawala.com/scraps/scrapbook.php" target="_blank">
+				<div id="projects-hippocampus">
+					<img src="hippo.gif" display="none" class="minibox-pic">
+<!-- 				<h4>hippocampus</h4> -->
+				</div>
+			</a>
+			</td>
+
+			<td>
+				<div id="projects-outreach">
+				<img src="outreach-1.jpg" display="none" class="minibox-pic" style="height:110%">
+<!-- 				<h4>outreach</h4> -->
+				</div>
+			</td>
+
+			<td>
+				<a href="http://at41coopersquare.github.io/GreenFeatures.html" target="_blank">
+				<div id="projects-at41cs">
+				<img src="at41cs-1.png" display="none" class="minibox-pic">
+<!-- 				<h4>@41CS</h4> -->
+				</div>
+			</td>
+
+
+	</tr>
+
+		<tr>
+			<td>
+				<div id="projects-sweplanners">
+				<img src="sweplanner-front.jpg" display="none" class="minibox-pic" style="margin-left:-60px">
+<!-- 				<h4>swe planners</h4> -->
+				</div>
+			</td>
+
+			<td>
+				<div id="projects-mechatronics">
+				<img src="thebat1.jpg" display="none" class="minibox-pic" style="margin-left:-20px">
+<!-- 				<h4>mechatronics</h4> -->
+				</div>
+			</td>
+
+			<td>
+				<div id="projects-drawings">
+				<img src="lancome.jpg" display="none" class="minibox-pic">
+<!-- 				<h4>drawings</h4> -->
+				</div>
+			</td>
+
+			<td>
+				<div id="projects-ebt">
+				<img src="ebt.jpg" display="none" class="minibox-pic" style="height: 120%; margin-top: -25px; margin-left: -25px;">
+<!-- 				<h4>ebt</h4> -->
+				</div>
+			</td>
+
+
+		</tr>
+
+
+	</table>
+</div>
+
+<div id="contactinfo">
+	<div id="textbox-contactinfo">
+		<h2>Contact Info.</h2>
+		<h3>Let's get in touch.</h3>
+		<p><br>
+			You can email me at pollysmirnov@gmail.com.
+			<a href="SmirnovaPolina_Resume.pdf">Resume</a>
+			<a href="http://www.linkedin.com/pub/polina-smirnova/88/516/231/">LinkedIn</a>
+
+		</p>
+	</div>
+</div>
+
+
+<!-- 	<a href="ExteriorDoubleSkin.html">
+		<div id="greenf" style="background-color:rgba(255, 214, 0, 0.6)">	
+			<table class="greentable">
+				<tr><img src="doubleskin.jpg" class="greenpic" width="325px" style="background-image: url(doubleskin.jpg)"/></tr>
+				<tr><h3>
+		      		Exterior Double Skin
+					</h3>
+					<p class=""><b>Reduces heat loss</b> during winter months and <b>reduces heat gains</b> during summer months.</p></tr>
+			</table>
+		</div>
+	</a> -->
+
+
+
+	</body>
+	</html>
+  
+   
