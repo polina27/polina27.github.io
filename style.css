@@ -181,7 +181,8 @@ nav ul li a:hover {
 #aboutme {
 	background-color: black;
 	background-image: url('background-ballet-1.jpg');
-	background-size: 100%;
+	background-size: 1300px;
+	background-repeat: no-repeat;
 	height: 760px;
 	margin-top: 25px;
 }
@@ -267,7 +268,6 @@ nav ul li a:hover {
 	width: 125px;
 	display: inline-block;
 	position: relative;
-	margin: 10px 5px 10px 5px;
 	color: black;
 	float: center;
 	top: 150px;
@@ -283,7 +283,6 @@ nav ul li a:hover {
 	width: 125px;
 	display: inline-block;
 	position: relative;
-	margin: 10px 5px 10px 5px;
 	color: black;
 	float: center;
 	top: 150px;
@@ -299,7 +298,6 @@ nav ul li a:hover {
 	width: 125px;
 	display: inline-block;
 	position: relative;
-	margin: 10px 5px 10px 5px;
 	color: black;
 	float: center;
 	top: 150px;
@@ -315,7 +313,6 @@ nav ul li a:hover {
 	width: 125px;
 	display: inline-block;
 	position: relative;
-	margin: 10px 5px 10px 5px;
 	color: black;
 	float: center;
 	top: 150px;
@@ -331,7 +328,6 @@ nav ul li a:hover {
 	width: 125px;
 	display: inline-block;
 	position: relative;
-	margin: 10px 5px 10px 5px;
 	color: black;
 	float: center;
 	top: 150px;
@@ -347,7 +343,6 @@ nav ul li a:hover {
 	width: 125px;
 	display: inline-block;
 	position: relative;
-	margin: 10px 5px 10px 5px;
 	color: black;
 	float: center;
 	top: 150px;
@@ -363,7 +358,6 @@ nav ul li a:hover {
 	width: 125px;
 	display: inline-block;
 	position: relative;
-	margin: 10px 5px 10px 5px;
 	color: black;
 	float: center;
 	top: 150px;
@@ -379,7 +373,6 @@ nav ul li a:hover {
 	width: 125px;
 	display: inline-block;
 	position: relative;
-	margin: 10px 5px 10px 5px;
 	color: black;
 	float: center;
 	top: 150px;
